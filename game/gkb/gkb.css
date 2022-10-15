@@ -1,7 +1,11 @@
 .opt:hover{
     transform: scale(1.2);
-    transition: .5s;
     cursor: pointer;
+    opacity: .8;
+}
+
+.opt{
+    transition: .5s;
 }
 
 .opt-aktif{
