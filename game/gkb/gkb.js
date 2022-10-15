@@ -1,5 +1,6 @@
 const text_hasil = document.querySelector(".hasil h1");
 const bot_img = document.querySelector(".bot img");
+const player_img = document.querySelector(".player img");
 
 function opt(i) {
   let player = i;
@@ -27,6 +28,18 @@ function opt(i) {
         break
     case 2:
         bot_img.src = "../../img/gkb/batu.png";
+        break
+  }
+
+  switch(player){
+    case 0:
+        player_img.src = "../../img/gkb/kertas.png";
+        break
+    case 1:
+        player_img.src = "../../img/gkb/gunting.png";
+        break
+    case 2:
+        player_img.src = "../../img/gkb/batu.png";
         break
   }
   text_hasil.innerHTML = hasil;

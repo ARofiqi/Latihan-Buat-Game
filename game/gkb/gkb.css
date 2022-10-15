@@ -11,3 +11,11 @@
 .opt-aktif{
     transform: scale(1.2);
 }
+
+.bot img, .player img{
+    width: 100px;
+}
+
+.hasil{
+    width: 200px;
+}
