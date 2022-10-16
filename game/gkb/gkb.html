@@ -10,6 +10,9 @@
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+
+    <!-- CSS animation AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div class="container-fluid bg-primary text-white bg-gradient">
@@ -21,16 +24,16 @@
       </div>
     </div>
 
-    <div class="container-fluid bg-primary bg-opacity-10 p-5">
+    <div class="container-fluid bg-primary bg-opacity-10 p-md-4 p-3">
       <div>
-        <sectin class="row justify-content-center m-5">
-          <div class="kertas text-center col-4">
+        <sectin class="row justify-content-center m-md-5">
+          <div data-aos="flip-left" class="kertas text-center col-md-4">
             <img class="opt" src="../../img/gkb/kertas.png" alt="kertas" onclick="opt(0)" />
           </div>
-          <div class="gunting text-center col-4">
+          <div data-aos="flip-left" class="gunting text-center col-md-4">
             <img class="opt" src="../../img/gkb/gunting.png" alt="gunting" onclick="opt(1)" />
           </div>
-          <div class="batu text-center col-4">
+          <div data-aos="flip-left" class="batu text-center col-md-4">
             <img class="opt" src="../../img/gkb/batu.png" alt="batu" onclick="opt(2)" />
           </div>
         </sectin>
@@ -39,32 +42,38 @@
       <div class="row">
         <section class="col-4">
           <div class="player text-center">
-            <img src="../../img/gkb/bot.png" alt="" />
+            <img src="../../img/gkb/bot.png" alt="player" />
           </div>
         </section>
 
-        <section class="d-flex justify-content-center align-items-center col-4">
+        <section class="col-4">
           <div class="bg-secondary hasil text-center text-white border border-dark">
-            <h1 class="display-6 p-3">HASIL</h1>
+            <h1>HASIL</h1>
           </div>
         </section>
 
         <section class="col-4">
           <div class="bot text-center">
-            <img src="../../img/gkb/bot.png" alt="" />
+            <img src="../../img/gkb/bot.png" alt="bot" />
           </div>
         </section>
       </div>
     </div>
 
-    <div class="container-fluid bg-primary bg-gradient ">
-      <div class="row text-center p-5 text-white">
-        <h1 class="display-6">By Ahmad Rofiqi</h1>
+    <div class="position-absolute top-100 start-50 translate-middle container-fluid bg-primary bg-gradient">
+      <div class="row text-center p-3 text-white">
+        <h1 class="display-6 fs-5">By Ahmad Rofiqi</h1>
       </div>
     </div>
 
     <script src="gkb.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <!-- JavaScript animation aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

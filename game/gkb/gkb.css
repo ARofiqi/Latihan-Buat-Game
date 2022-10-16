@@ -16,6 +16,9 @@
     width: 100px;
 }
 
-.hasil{
-    width: 200px;
+
+@media (max-width: 576px) {
+    .opt{
+        width: 100px;
+    }
 }
